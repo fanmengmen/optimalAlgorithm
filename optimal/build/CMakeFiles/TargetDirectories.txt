@@ -1,0 +1,3 @@
+/mnt/d/ubuntu/optimal/build/CMakeFiles/rebuild_cache.dir
+/mnt/d/ubuntu/optimal/build/CMakeFiles/ShapeEightFitting.dir
+/mnt/d/ubuntu/optimal/build/CMakeFiles/edit_cache.dir
