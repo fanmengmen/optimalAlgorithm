@@ -323,8 +323,8 @@ int main(int argc, char** argv) {
             << " -> " << param[1] << "\n";
  std::cout << "c : " << c_init
             << " -> " << param[2] << "\n";
-cv::Mat figure(1000, 1000, CV_8UC1,cv::Scalar(255) );
 
+cv::Mat figure(1000, 1000, CV_8UC1,cv::Scalar(255) );
 plot(figure,r,c,d);
 plot(figure,param[0],param[1],param[2]);
 cv::imshow("figure",figure);

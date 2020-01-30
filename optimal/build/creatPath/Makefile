@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/ubuntu/optimal/build/CMakeFiles /mnt/d/ubuntu/optimal/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /mnt/d/ubuntu/optimal/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/ubuntu/optimal/build/CMakeFiles /mnt/d/ubuntu/optimal/build/creatPath/CMakeFiles/progress.marks
+	cd /mnt/d/ubuntu/optimal/build && $(MAKE) -f CMakeFiles/Makefile2 creatPath/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/ubuntu/optimal/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /mnt/d/ubuntu/optimal/build && $(MAKE) -f CMakeFiles/Makefile2 creatPath/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,98 +97,87 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /mnt/d/ubuntu/optimal/build && $(MAKE) -f CMakeFiles/Makefile2 creatPath/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /mnt/d/ubuntu/optimal/build && $(MAKE) -f CMakeFiles/Makefile2 creatPath/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/d/ubuntu/optimal/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named ShapeEightFitting
+# Convenience name for target.
+creatPath/CMakeFiles/creatPath.dir/rule:
+	cd /mnt/d/ubuntu/optimal/build && $(MAKE) -f CMakeFiles/Makefile2 creatPath/CMakeFiles/creatPath.dir/rule
+.PHONY : creatPath/CMakeFiles/creatPath.dir/rule
 
-# Build rule for target.
-ShapeEightFitting: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ShapeEightFitting
-.PHONY : ShapeEightFitting
+# Convenience name for target.
+creatPath: creatPath/CMakeFiles/creatPath.dir/rule
 
-# fast build rule for target.
-ShapeEightFitting/fast:
-	$(MAKE) -f CMakeFiles/ShapeEightFitting.dir/build.make CMakeFiles/ShapeEightFitting.dir/build
-.PHONY : ShapeEightFitting/fast
-
-#=============================================================================
-# Target rules for targets named creatPath
-
-# Build rule for target.
-creatPath: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 creatPath
 .PHONY : creatPath
 
 # fast build rule for target.
 creatPath/fast:
-	$(MAKE) -f creatPath/CMakeFiles/creatPath.dir/build.make creatPath/CMakeFiles/creatPath.dir/build
+	cd /mnt/d/ubuntu/optimal/build && $(MAKE) -f creatPath/CMakeFiles/creatPath.dir/build.make creatPath/CMakeFiles/creatPath.dir/build
 .PHONY : creatPath/fast
 
-lineCirclefit.o: lineCirclefit.cpp.o
+creatPath.o: creatPath.cpp.o
 
-.PHONY : lineCirclefit.o
-
-# target to build an object file
-lineCirclefit.cpp.o:
-	$(MAKE) -f CMakeFiles/ShapeEightFitting.dir/build.make CMakeFiles/ShapeEightFitting.dir/lineCirclefit.cpp.o
-.PHONY : lineCirclefit.cpp.o
-
-lineCirclefit.i: lineCirclefit.cpp.i
-
-.PHONY : lineCirclefit.i
-
-# target to preprocess a source file
-lineCirclefit.cpp.i:
-	$(MAKE) -f CMakeFiles/ShapeEightFitting.dir/build.make CMakeFiles/ShapeEightFitting.dir/lineCirclefit.cpp.i
-.PHONY : lineCirclefit.cpp.i
-
-lineCirclefit.s: lineCirclefit.cpp.s
-
-.PHONY : lineCirclefit.s
-
-# target to generate assembly for a file
-lineCirclefit.cpp.s:
-	$(MAKE) -f CMakeFiles/ShapeEightFitting.dir/build.make CMakeFiles/ShapeEightFitting.dir/lineCirclefit.cpp.s
-.PHONY : lineCirclefit.cpp.s
-
-plot.o: plot.cpp.o
-
-.PHONY : plot.o
+.PHONY : creatPath.o
 
 # target to build an object file
-plot.cpp.o:
-	$(MAKE) -f CMakeFiles/ShapeEightFitting.dir/build.make CMakeFiles/ShapeEightFitting.dir/plot.cpp.o
-.PHONY : plot.cpp.o
+creatPath.cpp.o:
+	cd /mnt/d/ubuntu/optimal/build && $(MAKE) -f creatPath/CMakeFiles/creatPath.dir/build.make creatPath/CMakeFiles/creatPath.dir/creatPath.cpp.o
+.PHONY : creatPath.cpp.o
 
-plot.i: plot.cpp.i
+creatPath.i: creatPath.cpp.i
 
-.PHONY : plot.i
+.PHONY : creatPath.i
 
 # target to preprocess a source file
-plot.cpp.i:
-	$(MAKE) -f CMakeFiles/ShapeEightFitting.dir/build.make CMakeFiles/ShapeEightFitting.dir/plot.cpp.i
-.PHONY : plot.cpp.i
+creatPath.cpp.i:
+	cd /mnt/d/ubuntu/optimal/build && $(MAKE) -f creatPath/CMakeFiles/creatPath.dir/build.make creatPath/CMakeFiles/creatPath.dir/creatPath.cpp.i
+.PHONY : creatPath.cpp.i
 
-plot.s: plot.cpp.s
+creatPath.s: creatPath.cpp.s
 
-.PHONY : plot.s
+.PHONY : creatPath.s
 
 # target to generate assembly for a file
-plot.cpp.s:
-	$(MAKE) -f CMakeFiles/ShapeEightFitting.dir/build.make CMakeFiles/ShapeEightFitting.dir/plot.cpp.s
-.PHONY : plot.cpp.s
+creatPath.cpp.s:
+	cd /mnt/d/ubuntu/optimal/build && $(MAKE) -f creatPath/CMakeFiles/creatPath.dir/build.make creatPath/CMakeFiles/creatPath.dir/creatPath.cpp.s
+.PHONY : creatPath.cpp.s
+
+creatPlan.o: creatPlan.cpp.o
+
+.PHONY : creatPlan.o
+
+# target to build an object file
+creatPlan.cpp.o:
+	cd /mnt/d/ubuntu/optimal/build && $(MAKE) -f creatPath/CMakeFiles/creatPath.dir/build.make creatPath/CMakeFiles/creatPath.dir/creatPlan.cpp.o
+.PHONY : creatPlan.cpp.o
+
+creatPlan.i: creatPlan.cpp.i
+
+.PHONY : creatPlan.i
+
+# target to preprocess a source file
+creatPlan.cpp.i:
+	cd /mnt/d/ubuntu/optimal/build && $(MAKE) -f creatPath/CMakeFiles/creatPath.dir/build.make creatPath/CMakeFiles/creatPath.dir/creatPlan.cpp.i
+.PHONY : creatPlan.cpp.i
+
+creatPlan.s: creatPlan.cpp.s
+
+.PHONY : creatPlan.s
+
+# target to generate assembly for a file
+creatPlan.cpp.s:
+	cd /mnt/d/ubuntu/optimal/build && $(MAKE) -f creatPath/CMakeFiles/creatPath.dir/build.make creatPath/CMakeFiles/creatPath.dir/creatPlan.cpp.s
+.PHONY : creatPlan.cpp.s
 
 # Help Target
 help:
@@ -197,15 +186,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... ShapeEightFitting"
-	@echo "... edit_cache"
 	@echo "... creatPath"
-	@echo "... lineCirclefit.o"
-	@echo "... lineCirclefit.i"
-	@echo "... lineCirclefit.s"
-	@echo "... plot.o"
-	@echo "... plot.i"
-	@echo "... plot.s"
+	@echo "... edit_cache"
+	@echo "... creatPath.o"
+	@echo "... creatPath.i"
+	@echo "... creatPath.s"
+	@echo "... creatPlan.o"
+	@echo "... creatPlan.i"
+	@echo "... creatPlan.s"
 .PHONY : help
 
 
@@ -217,6 +205,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/d/ubuntu/optimal/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

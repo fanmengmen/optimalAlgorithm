@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS = -std=c++11 -O3   -std=gnu++11
 
-CXX_DEFINES = -DGFLAGS_IS_A_DLL=0
+CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /usr/local/include -isystem /usr/include/eigen3 -isystem /usr/local/include/opencv 
+CXX_INCLUDES = -isystem /usr/local/include 
 

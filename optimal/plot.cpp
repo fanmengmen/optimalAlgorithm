@@ -107,7 +107,7 @@ int plot(Mat &M1,double &r, double &c, double &d, double alpha)
     {
       center.y = (data_y[i] + d)*samplePoint;
       center.x = (data_x[i] + c)*samplePoint;
-      circle(M1,center,2,0,2);
+      circle(M1,center,2,alpha,2);
       
     }
     // waitKey(0);

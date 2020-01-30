@@ -168,8 +168,8 @@ int main(int argc, char** argv) {
                 << " -> " << param[2] << "\n";
 
     cv::Mat figure(1000, 1000, CV_8UC1,cv::Scalar(255) );
-    plot(figure,r,c,d);
-    plot(figure,param[0],param[1],param[2]);
+    plot(figure,r,c,d,0);
+    plot(figure,param[0],param[1],param[2],128);
     cv::imshow("figure",figure);
     cv::waitKey(0);
     //  std::cout << "d : " << d_init
